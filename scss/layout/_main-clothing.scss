@@ -1,0 +1,52 @@
+h2{
+    color:#ccc;
+    text-align: center;
+}
+
+.container-clot{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+    align-items:center; 
+    row-gap: 20px;
+  }
+  
+  .img-cl{
+    max-width: 70%; 
+    height:auto;
+    padding: 0.5em;
+  }
+  
+.ber-img-container{
+    @include grid;
+}
+
+.img-item{
+    max-width: 70%;
+    padding: 0.5em;
+}
+
+.catalogo{
+    display: block;
+    margin-top:20px;
+    color:gray;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+        color:white;
+  }
+    }
+    
+    .jeans-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .img-jeans{
+        max-width: 70%;
+        height: auto;
+        padding: 0.5em;
+      }
+      

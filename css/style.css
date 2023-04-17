@@ -9,6 +9,25 @@ body {
   font-family: "Quantico", sans-serif;
 }
 
+.btn-main {
+  padding: 1rem 2rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #dfdfdf;
+  border-radius: 10%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #dfdfdf;
+  border-radius: 10%;
+}
+
 nav {
   flex-wrap: wrap;
   display: flex;
@@ -17,7 +36,7 @@ nav {
   gap: none;
 }
 nav .header-img {
-  width: 100px;
+  width: 180px;
 }
 
 .menu ul {
@@ -62,6 +81,104 @@ footer .footer-container .footer-icons a i {
 
 body {
   background-color: black;
+}
+
+div {
+  margin-top: 2rem;
+}
+
+.main-img {
+  max-width: 100%;
+  height: auto;
+}
+
+span {
+  color: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  padding: 1.5rem;
+}
+
+h2 {
+  color: #ccc;
+  text-align: center;
+}
+
+.container-clot {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.img-cl {
+  max-width: 70%;
+  height: auto;
+  padding: 0.5em;
+}
+
+.ber-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "item-1 item-2 item-3" "item-4 item-5 item-6";
+}
+.ber-img-container .item-1 {
+  grid-area: item-1;
+}
+.ber-img-container .item-2 {
+  grid-area: item-2;
+}
+.ber-img-container .item-3 {
+  grid-area: item-3;
+}
+.ber-img-container .item-4 {
+  grid-area: item-4;
+}
+.ber-img-container .item-5 {
+  grid-area: item-5;
+}
+.ber-img-container .item-6 {
+  grid-area: item-6;
+}
+
+.img-item {
+  max-width: 70%;
+  padding: 0.5em;
+}
+
+.catalogo {
+  display: block;
+  margin-top: 20px;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+}
+.catalogo:hover {
+  color: white;
+}
+
+.jeans-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-jeans {
+  max-width: 70%;
+  height: auto;
+  padding: 0.5em;
 }
 
 @media (max-width: 1024px) {
