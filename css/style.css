@@ -28,6 +28,26 @@ body {
   color: #343a40;
 }
 
+.btn-sect {
+  background-color: white;
+  color: #343a40;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.btn-sect a {
+  color: #343a40;
+  text-decoration: none;
+}
+.btn-sect:hover {
+  background-color: #343a40;
+  color: white;
+}
+.btn-sect:hover a {
+  color: white;
+  font-weight: bold;
+}
+
 nav {
   flex-wrap: wrap;
   display: flex;
@@ -100,8 +120,7 @@ span {
 h1 {
   color: white;
   font-family: "Oswald", sans-serif;
-  font-size: 70px;
-  padding: 1.5rem;
+  font-size: 90px;
 }
 
 h2 {

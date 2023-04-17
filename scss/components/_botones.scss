@@ -1,3 +1,5 @@
+//boton main. el proposito del condicional es hacer que solo 
+//cuando el usuario pase el hover sobre el boton los colores se inviertan.
 .btn-main {
   $invert: false;
   background-color: #343a40;
@@ -24,6 +26,43 @@
       color: #343a40;
       a {
         color: #343a40;
+      }
+    }
+  }
+}
+
+//boton seccion CLOTHING. el proposito del condicional es hacer lo mismo que hace
+//en boton main, solo que los colores se disponen al reves.
+.btn-sect{
+  $invert:false;
+  background-color: white;
+  color: #343a40;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+
+  a {
+    color:#343a40 ;
+    text-decoration: none;
+  }
+  
+  &:hover {
+    $invert: true;
+    @if $invert {
+      background-color: #343a40;
+      color: white;
+      a {
+        color: white;
+        font-weight: bold;
+
+      }
+    } @else {
+      background-color: mix(white,#343a40, 50%);
+      color: white;
+      a {
+        color: white;
+          font-weight: bold;
+
       }
     }
   }
