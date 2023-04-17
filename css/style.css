@@ -1,3 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+  font-family: "Quantico", sans-serif;
+}
+
+nav .menu {
+  width: 100%;
+  overflow: hidden;
+}
+nav .menu ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+nav label {
+  display: inline-flex;
+  color: white;
+}
+nav nav #toggle:checked ~ .menu {
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  header {
+    font-size: 17px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .header-img {
+    width: 100px;
+  }
+  header nav .nav-bar-sections {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  header nav .nav-bar-sections li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.5rem;
+  }
+  header nav #toggle, header nav label {
+    display: none;
+  }
+  .nav-bar-sections a:hover {
+    color: grey;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
