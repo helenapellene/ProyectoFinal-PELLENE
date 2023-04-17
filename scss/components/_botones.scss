@@ -1,7 +1,6 @@
 //boton main. el proposito del condicional es hacer que solo 
 //cuando el usuario pase el hover sobre el boton los colores se inviertan.
 .btn-main {
-  $invert: false;
   background-color: #343a40;
   color: white;
   border: none;
@@ -34,7 +33,6 @@
 //boton seccion CLOTHING. el proposito del condicional es hacer lo mismo que hace
 //en boton main, solo que los colores se disponen al reves.
 .btn-sect{
-  $invert:false;
   background-color: white;
   color: #343a40;
   border: none;
