@@ -1,7 +1,13 @@
 h2{
     color:#ccc;
     text-align: center;
+    margin-top:20px;
 }
+
+.cont-img{
+   @include flex-card;
+}
+
 
 .container-clot{
     display: flex;
@@ -10,26 +16,33 @@ h2{
     justify-content: space-around;
     align-items:center; 
     row-gap: 20px;
+    .img-cl{
+      max-width: 70%; 
+      height:auto;
+      padding: 0.5em;
+    }
   }
   
-  .img-cl{
-    max-width: 70%; 
-    height:auto;
-    padding: 0.5em;
-  }
+
   
 .ber-img-container{
     @include grid;
-}
-
-.img-item{
-    max-width: 70%;
-    padding: 0.5em;
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
+      @include flex-card;
+    }
+    .img-item{
+      max-width: 70%;
+      height:auto;
+      padding: 0.5em;
+  
+  }
+  
 }
 
 .catalogo{
     display: block;
     margin-top:20px;
+    margin-bottom:20px;
     color:gray;
     text-align: center;
     text-decoration: none;
@@ -42,11 +55,11 @@ h2{
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-      
-      .img-jeans{
-        max-width: 70%;
-        height: auto;
-        padding: 0.5em;
+        .img-jeans{
+          max-width: 70%;
+          height: auto;
+          padding: 0.5em;
+        }
+        
       }
       

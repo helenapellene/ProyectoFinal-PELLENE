@@ -1,19 +1,21 @@
-.btn-main{
-    padding: 1rem 2rem; 
-    color: #000000;
+.btn-main {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  
+  a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    background-color: #dfdfdf;
-    border-radius: 10%;
-    
+  }
+  //se invierten los colores del boton cada vez que el usuario pase el hover por encima del mismo
+  &:hover {
+    background-color: mix(#343a40, white, 50%);
+    color: #343a40;
+    a {
+      color: #343a40;
     }
-    
-    .btn {
-        display: inline-block;
-        padding: 0.4rem 1.5rem;
-        color: #000000;
-        text-decoration: none;
-        font-weight: bold;
-        background-color: #dfdfdf;
-        border-radius: 10%;
-      }
+  }
+}
+

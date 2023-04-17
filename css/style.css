@@ -10,22 +10,22 @@ body {
 }
 
 .btn-main {
-  padding: 1rem 2rem;
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: #dfdfdf;
-  border-radius: 10%;
+  background-color: #343a40;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
-
-.btn {
-  display: inline-block;
-  padding: 0.4rem 1.5rem;
-  color: #000000;
+.btn-main a {
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  background-color: #dfdfdf;
-  border-radius: 10%;
+}
+.btn-main:hover {
+  background-color: #9a9da0;
+  color: #343a40;
+}
+.btn-main:hover a {
+  color: #343a40;
 }
 
 nav {
@@ -107,6 +107,14 @@ h1 {
 h2 {
   color: #ccc;
   text-align: center;
+  margin-top: 20px;
+}
+
+.cont-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-clot {
@@ -117,8 +125,7 @@ h2 {
   align-items: center;
   row-gap: 20px;
 }
-
-.img-cl {
+.container-clot .img-cl {
   max-width: 70%;
   height: auto;
   padding: 0.5em;
@@ -152,15 +159,22 @@ h2 {
 .ber-img-container .item-6 {
   grid-area: item-6;
 }
-
-.img-item {
+.ber-img-container .item-1, .ber-img-container .item-2, .ber-img-container .item-3, .ber-img-container .item-4, .ber-img-container .item-5, .ber-img-container .item-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ber-img-container .img-item {
   max-width: 70%;
+  height: auto;
   padding: 0.5em;
 }
 
 .catalogo {
   display: block;
   margin-top: 20px;
+  margin-bottom: 20px;
   color: gray;
   text-align: center;
   text-decoration: none;
@@ -174,8 +188,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
-.img-jeans {
+.jeans-img-container .img-jeans {
   max-width: 70%;
   height: auto;
   padding: 0.5em;
