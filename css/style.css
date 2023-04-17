@@ -239,6 +239,39 @@ h2 {
   color: white;
 }
 
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  gap: 1rem;
+  margin-top: 70px;
+}
+.box-container .box-1, .box-container .box-2, .box-container .box-3 {
+  background-color: rgb(231, 229, 229);
+  flex-basis: 30%;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box-container .box-1 ul, .box-container .box-2 ul, .box-container .box-3 ul {
+  list-style: none;
+}
+.box-container .box-1 ul li, .box-container .box-2 ul li, .box-container .box-3 ul li {
+  margin: 5px 0;
+}
+.box-container .box-1 ul a, .box-container .box-2 ul a, .box-container .box-3 ul a {
+  text-decoration: none;
+  color: black;
+}
+.box-container .box-1 ul a:hover, .box-container .box-2 ul a:hover, .box-container .box-3 ul a:hover {
+  color: grey;
+}
+
 @media (max-width: 1024px) {
   header {
     font-size: 17px;
