@@ -16,11 +16,6 @@ h2{
     justify-content: space-around;
     align-items:center; 
     row-gap: 20px;
-    .img-cl{
-      max-width: 70%; 
-      height:auto;
-      padding: 0.5em;
-    }
   }
   
 
@@ -30,15 +25,31 @@ h2{
     .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
       @include flex-card;
     }
-    .img-item{
-      max-width: 70%;
-      height:auto;
-      padding: 0.5em;
-  
-  }
   
 }
 
+.jeans-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}    
+
+.img-jeans, .img-cl, .img-item, .img-zapas{
+    max-width: 70%;
+    height: auto;
+    padding: 0.5em;
+}
+
+.zapas-img-container{
+  @include grid;
+  .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
+    @include flex-card;
+  }
+  
+}
+    
+      
 .catalogo{
     display: block;
     margin-top:20px;
@@ -50,16 +61,3 @@ h2{
         color:white;
   }
     }
-    
-    .jeans-img-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .img-jeans{
-          max-width: 70%;
-          height: auto;
-          padding: 0.5em;
-        }
-        
-      }
-      
