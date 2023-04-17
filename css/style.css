@@ -21,7 +21,7 @@ body {
   text-decoration: none;
 }
 .btn-main:hover {
-  background-color: #9a9da0;
+  background-color: white;
   color: #343a40;
 }
 .btn-main:hover a {

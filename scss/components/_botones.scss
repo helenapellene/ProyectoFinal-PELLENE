@@ -1,21 +1,32 @@
 .btn-main {
+  $invert: false;
   background-color: #343a40;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  
+
   a {
     color: white;
     text-decoration: none;
   }
-  //se invierten los colores del boton cada vez que el usuario pase el hover por encima del mismo
+
   &:hover {
-    background-color: mix(#343a40, white, 50%);
-    color: #343a40;
-    a {
+    $invert: true;
+    @if $invert {
+      background-color: white;
       color: #343a40;
+      a {
+        color: #343a40;
+      }
+    } @else {
+      background-color: mix(#343a40, white, 50%);
+      color: #343a40;
+      a {
+        color: #343a40;
+      }
     }
   }
 }
+
 
