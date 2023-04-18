@@ -275,95 +275,50 @@ h2 {
   color: grey;
 }
 
-@media (max-width: 1024px) {
-  header {
-    font-size: 17px;
-  }
-  header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header nav .header-img {
-    width: 100px;
-  }
-  header nav .nav-bar-sections {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  header nav .nav-bar-sections li a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 1.5rem;
-  }
-  header nav #toggle, header nav label {
-    display: none;
-  }
-  .nav-bar-sections a:hover {
-    color: grey;
-  }
-  .footer-container .footer-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    margin-bottom: -200px;
-  }
-  .footer-container .footer-icons i {
-    font-size: 20px;
-    margin: 0 10px;
-  }
+/* navbar */
+nav .menu {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
 }
-@media (max-width: 768px) {
-  /* navbar */
-  nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  .menu ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
-  nav label {
-    display: inline-flex;
-    color: white;
-    cursor: pointer;
-  }
-  nav #toggle:checked ~ .menu {
-    height: 50vh;
-  }
-  /* main */
-  .container-grid {
-    display: flex;
-    flex-direction: column;
-  }
-  .main-img {
-    width: 100%;
-  }
+
+.menu ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
 }
-@media (max-width: 320px) {
-  /* navbar */
-  nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  nav .menu ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
-  nav label {
-    display: inline-flex;
-    color: white;
-    cursor: pointer;
-  }
-  nav #toggle:checked ~ .menu {
-    height: 50vh;
-  }
+
+nav label {
+  display: inline-flex;
+  color: white;
+  cursor: pointer;
+}
+
+nav #toggle:checked ~ .menu {
+  height: 50vh;
+}
+
+/* navbar */
+nav .menu {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.menu ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+nav label {
+  display: inline-flex;
+  color: white;
+  cursor: pointer;
+}
+
+nav #toggle:checked ~ .menu {
+  height: 50vh;
 }
 
 /*# sourceMappingURL=style.css.map */
