@@ -2,7 +2,7 @@ nav{
     flex-wrap:wrap;
     @include flex(space-between, center, none);
     .header-img{
-        width:180px;
+        width:150px;
     }
 }
 
