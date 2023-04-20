@@ -2,9 +2,10 @@
 body{
     background-color: black;
 }
- .container-fluid{
-  margin-top:1rem;
- }
+
+  div{
+    margin-top: 2rem;
+    }
         
     .main-img {
         max-width: 100%;
@@ -13,7 +14,6 @@ body{
 span{
     color:whitesmoke;
     text-align: center;
-    margin:2rem;
     }
         
         
@@ -22,5 +22,3 @@ span{
     font-family: 'Oswald', sans-serif;
     font-size: 90px;
     }
-
-    
