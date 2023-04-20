@@ -49,11 +49,9 @@ body {
 }
 
 .css-nav {
-  display: flex;
   background-color: transparent !important;
 }
 .css-nav .css-ul {
-  display: flex;
   gap: 2rem;
 }
 .css-nav .css-ul li a:hover {
