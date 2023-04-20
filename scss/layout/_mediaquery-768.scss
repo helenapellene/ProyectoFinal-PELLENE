@@ -1,25 +1,3 @@
-@media (max-width: 768px) {
-    .menu {
-      display: block;
-    }
-
-    label {
-      display: block;
-    }
-
-    .menu ul {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    #toggle:checked ~ .menu ul {
-      display: flex;
-      
-    }
-  }
-
-
 
 
 
