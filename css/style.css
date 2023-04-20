@@ -52,6 +52,7 @@ body {
   background-color: transparent !important;
 }
 .css-nav .css-ul {
+  align-items: center;
   gap: 2rem;
 }
 .css-nav .css-ul li a:hover {
