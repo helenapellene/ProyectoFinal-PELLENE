@@ -261,7 +261,7 @@ h2 {
   color: grey;
 }
 
-@media (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   .logo-main {
     width: 200px;
   }
@@ -275,6 +275,86 @@ h2 {
     justify-content: space-around;
     align-items: center;
     row-gap: 20px;
+  }
+  .ber-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "item-1 item-2" "item-3 item-4" "item-5 item-6";
+  }
+  .ber-img-container .item-1 {
+    grid-area: item-1;
+  }
+  .ber-img-container .item-2 {
+    grid-area: item-2;
+  }
+  .ber-img-container .item-3 {
+    grid-area: item-3;
+  }
+  .ber-img-container .item-4 {
+    grid-area: item-4;
+  }
+  .ber-img-container .item-5 {
+    grid-area: item-5;
+  }
+  .ber-img-container .item-6 {
+    grid-area: item-6;
+  }
+  .ber-img-container .item-1, .ber-img-container .item-2, .ber-img-container .item-3, .ber-img-container .item-4, .ber-img-container .item-5, .ber-img-container .item-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ber-img-container .img-item {
+    width: 300px;
+  }
+  .jeans-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "item-1 item-2" "item-3 item-4" "item-5 item-6";
+  }
+  .jeans-img-container .item-1 {
+    grid-area: item-1;
+  }
+  .jeans-img-container .item-2 {
+    grid-area: item-2;
+  }
+  .jeans-img-container .item-3 {
+    grid-area: item-3;
+  }
+  .jeans-img-container .item-4 {
+    grid-area: item-4;
+  }
+  .jeans-img-container .item-5 {
+    grid-area: item-5;
+  }
+  .jeans-img-container .item-6 {
+    grid-area: item-6;
+  }
+  .jeans-img-container .item-1, .jeans-img-container .item-2, .jeans-img-container .item-3, .jeans-img-container .item-4, .jeans-img-container .item-5, .jeans-img-container .item-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-sect {
+    background-color: #343a40;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  .btn-sect a {
+    color: white;
   }
 }
 
