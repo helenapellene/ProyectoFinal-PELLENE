@@ -4,12 +4,12 @@
         width:200px;
     }
 
-    //inicio
+/////////////////////////////////////////////INICIO
     h1{
         font-size: 50px;
     }
 
-    //clothing
+/////////////////////////////////////////////CLOTHING
     .container-clot{
         display: flex;
         flex-direction: column;
@@ -21,21 +21,19 @@
       
     .ber-img-container{
     @include grid-mediaquery;
-    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
-      @include flex-card;
-    }
-    .img-item{
-        width:300px;
-    }
+    @include flex-card;
     }
 
     .jeans-img-container{
         @include grid-mediaquery;
-        .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
-          @include flex-card;
+        @include flex-card;
         }
     
-    }
+
+
+    .cont-img{
+        @include flex-card;
+     }
 
     .btn-sect{
         background-color:#343a40;
@@ -46,4 +44,16 @@
             color:white;
         }
     }
-}
+/////////////////////////////////////////////FOOTWEAR
+.zapas-img-container{
+    @include grid-mediaquery;
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
+        @include flex-mediaquery;
+      }
+    }
+    
+  }
+
+    
+
+    

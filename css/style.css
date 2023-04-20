@@ -50,6 +50,7 @@ body {
 
 .css-nav {
   background-color: transparent !important;
+  margin-top: 0 !important;
 }
 .css-nav .css-ul {
   align-items: center;
@@ -285,6 +286,10 @@ h2 {
     justify-items: center;
     align-items: center;
     grid-template-areas: "item-1 item-2" "item-3 item-4" "item-5 item-6";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .ber-img-container .item-1 {
     grid-area: item-1;
@@ -304,15 +309,6 @@ h2 {
   .ber-img-container .item-6 {
     grid-area: item-6;
   }
-  .ber-img-container .item-1, .ber-img-container .item-2, .ber-img-container .item-3, .ber-img-container .item-4, .ber-img-container .item-5, .ber-img-container .item-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .ber-img-container .img-item {
-    width: 300px;
-  }
   .jeans-img-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -322,6 +318,10 @@ h2 {
     justify-items: center;
     align-items: center;
     grid-template-areas: "item-1 item-2" "item-3 item-4" "item-5 item-6";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .jeans-img-container .item-1 {
     grid-area: item-1;
@@ -341,7 +341,7 @@ h2 {
   .jeans-img-container .item-6 {
     grid-area: item-6;
   }
-  .jeans-img-container .item-1, .jeans-img-container .item-2, .jeans-img-container .item-3, .jeans-img-container .item-4, .jeans-img-container .item-5, .jeans-img-container .item-6 {
+  .cont-img {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,6 +355,42 @@ h2 {
   }
   .btn-sect a {
     color: white;
+  }
+  .zapas-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "item-1 item-2" "item-3 item-4" "item-5 item-6";
+  }
+  .zapas-img-container .item-1 {
+    grid-area: item-1;
+  }
+  .zapas-img-container .item-2 {
+    grid-area: item-2;
+  }
+  .zapas-img-container .item-3 {
+    grid-area: item-3;
+  }
+  .zapas-img-container .item-4 {
+    grid-area: item-4;
+  }
+  .zapas-img-container .item-5 {
+    grid-area: item-5;
+  }
+  .zapas-img-container .item-6 {
+    grid-area: item-6;
+  }
+  .zapas-img-container .item-1, .zapas-img-container .item-2, .zapas-img-container .item-3, .zapas-img-container .item-4, .zapas-img-container .item-5, .zapas-img-container .item-6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
