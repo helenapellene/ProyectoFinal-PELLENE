@@ -4,6 +4,7 @@ nav{
     .header-img{
         width:150px;
     }
+
 }
 
 .menu ul{
@@ -15,12 +16,12 @@ nav{
         padding: 1.5rem;
     }
 }
+ nav #toggle, nav label{
+    display:none;
+}
 
-nav #toggle, nav label{
-    display: none;
-    }
+
     
     .nav-bar-sections a:hover {
       color:grey;
     }
-    
