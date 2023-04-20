@@ -50,6 +50,8 @@ body {
 
 .css-nav {
   background-color: transparent !important;
+}
+.css-nav .mt-0 {
   margin-top: 0 !important;
 }
 .css-nav .css-ul {
@@ -67,7 +69,13 @@ body {
   max-width: 50% !important;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 footer .footer-container {
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
