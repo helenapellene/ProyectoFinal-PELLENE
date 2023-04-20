@@ -262,7 +262,7 @@ h2 {
   color: grey;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 416px) {
   .logo-main {
     width: 200px;
   }
@@ -365,6 +365,10 @@ h2 {
     justify-items: center;
     align-items: center;
     grid-template-areas: "item-1 item-2" "item-3 item-4" "item-5 item-6";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .zapas-img-container .item-1 {
     grid-area: item-1;
@@ -383,14 +387,6 @@ h2 {
   }
   .zapas-img-container .item-6 {
     grid-area: item-6;
-  }
-  .zapas-img-container .item-1, .zapas-img-container .item-2, .zapas-img-container .item-3, .zapas-img-container .item-4, .zapas-img-container .item-5, .zapas-img-container .item-6 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
   }
 }
 
