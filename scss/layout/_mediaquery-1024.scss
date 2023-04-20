@@ -2,6 +2,7 @@
     footer{
         .footer-container{
             @include flex(center, center,none);
+            margin-bottom: -100px;
             .footer-text{
                 color:white;
             }
