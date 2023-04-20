@@ -3,8 +3,19 @@
     .logo-main{
         width:200px;
     }
-    //main
+
+    //inicio
     h1{
         font-size: 50px;
     }
+
+    //clothing
+    .container-clot{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+        align-items:center; 
+        row-gap: 20px;
+      }
 }
