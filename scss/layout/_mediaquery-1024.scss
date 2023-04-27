@@ -1,7 +1,13 @@
 @media only screen and (min-width: 1024px) and (max-width: 1440px){
     footer{
         .footer-container{
-            @include flex(center, center,none);
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .footer-text{
                 color:white;
             }
