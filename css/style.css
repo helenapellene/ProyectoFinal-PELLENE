@@ -41,6 +41,11 @@ body {
   font-size: 30px;
 }
 
+.navbar-toggler-icon {
+  background-image: url("/assets/img/men-responsive.png");
+  width: 20px;
+}
+
 .btn-main {
   background-color: #343a40;
   color: white;
@@ -154,6 +159,9 @@ h1 {
   color: white;
   font-family: "Oswald", sans-serif;
   font-size: 90px;
+}
+h1:hover {
+  color: grey;
 }
 
 h2 {
