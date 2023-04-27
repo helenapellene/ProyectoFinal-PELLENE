@@ -9,6 +9,23 @@ body {
   font-family: "Quantico", sans-serif;
 }
 
+.container-fluid {
+  margin-top: 0;
+}
+
+.card {
+  background-color: rgb(212, 212, 212);
+}
+.card h5 {
+  font-size: 30px;
+}
+.card i {
+  font-size: 20px;
+}
+.card p {
+  font-size: 20px;
+}
+
 .btn-main {
   background-color: #343a40;
   color: white;
@@ -94,6 +111,7 @@ footer .footer-container .footer-icons a i {
 
 body {
   background-color: black;
+  height: 100%;
 }
 
 div {
