@@ -327,6 +327,11 @@ h2 {
   color: grey;
 }
 
+.subcard {
+  font-size: 20px;
+  text-align: center;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   footer .footer-container {
     width: 100%;
