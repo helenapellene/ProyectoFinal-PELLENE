@@ -194,7 +194,58 @@
     </div>
   </footer>
 
+<!------------------------------/* BOTON ABAJO HACIA ARRIBA */------------------------->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+<div class="scrollup" href="#"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+
+<script>
+  $(document).ready(function(){
+   
+    $(".mouse").on('click', function(event) {
+  
+     
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+  
+   $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+         window.location.hash = hash;
+        });
+      } 
+    });
+  });
+  
+  //abajo hacia arriba
+  
+
+  $(window).scroll(function () {
+  if ($(this).scrollTop() > 400) {
+  $('.scrollup').fadeIn();
+  } else {
+  $('.scrollup').fadeOut();
+  }
+  });
+  </script>
+  </head>
+  <br><br><br><br><br>
+  
+  <br><br><br>
+  <div class="scrollup" href="#"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+  <script>
+
+  $('.scrollup').click(function (){
+  $("html,body").animate({
+  scrollTop: 0
+  }, 1000);
+  return false;
+  });
+  </script>
+  </div>
 
 </body>
 
