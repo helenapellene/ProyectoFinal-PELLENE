@@ -307,40 +307,56 @@ h2 {
 .box-container {
   display: flex;
   justify-content: space-between;
-  align-items: none;
-  gap: 1rem;
+  align-items: stretch;
+  max-height: 800px;
   margin-top: 70px;
 }
-.box-container .box-1, .box-container .box-2, .box-container .box-3 {
+.box-container p {
+  text-align: center;
+}
+.box-container ul {
+  margin: 0;
+  padding: 0;
+}
+.box-container ul li {
+  text-align: center;
+  list-style: none;
+}
+.box-container ul li a {
+  text-decoration: none;
+  color: black;
+}
+.box-container ul li a:hover {
+  color: grey;
+}
+.box-container .box-1,
+.box-container .box-2,
+.box-container .box-3 {
   background-color: rgb(231, 229, 229);
   flex-basis: 30%;
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+.box-container .box-1 h3,
+.box-container .box-2 h3,
+.box-container .box-3 h3 {
   text-align: center;
-}
-.box-container .box-1 .icon, .box-container .box-2 .icon, .box-container .box-3 .icon {
-  width: 150px;
-}
-.box-container .box-1 h3, .box-container .box-2 h3, .box-container .box-3 h3 {
   font-size: 25px;
 }
-.box-container .box-1 ul, .box-container .box-2 ul, .box-container .box-3 ul {
-  list-style: none;
+.box-container .box-1 i,
+.box-container .box-2 i,
+.box-container .box-3 i {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
-.box-container .box-1 ul li, .box-container .box-2 ul li, .box-container .box-3 ul li {
-  margin: 5px 0;
+.box-container .zoom-box {
+  transition: transform 0.2s ease-in-out;
 }
-.box-container .box-1 ul a, .box-container .box-2 ul a, .box-container .box-3 ul a {
-  text-decoration: none;
-  color: black;
-}
-.box-container .box-1 ul a:hover, .box-container .box-2 ul a:hover, .box-container .box-3 ul a:hover {
-  color: grey;
+.box-container .zoom-box:hover {
+  transform: scale(1.1);
 }
 
 .subcard {
@@ -399,6 +415,13 @@ h2 {
   }
   footer .footer-icons a i {
     color: white;
+  }
+}
+@media only screen and (min-width: 427px) and (max-width: 600px) {
+  .box-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 300px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 425px) {
@@ -528,8 +551,9 @@ h2 {
     grid-area: item-6;
   }
   .box-container {
-    display: flex;
     flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 300px;
   }
   h5 {
     font-size: 15px;

@@ -53,10 +53,13 @@
   }
 
   /////////////////////////////////////////////COMPRA
-  .box-container{
-    display:flex;
+  .box-container {
     flex-direction: column;
+    gap:2rem;
+    margin-bottom: 300px;
+
   }
+  
     
   /////////////////////////////////////////////CONTACTO
   h5{
@@ -68,7 +71,6 @@
     height:400px;
   }
 
-  
  
 }
     
