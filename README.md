@@ -17,5 +17,4 @@ GRID
 
 # ESTADO DEL PROYECTO - NOVEDADES
 
-Tercera entrega del proyecto.
-Se terminó de aplicar los media query para todas las secciones.
+ENTREGA FINAL.
