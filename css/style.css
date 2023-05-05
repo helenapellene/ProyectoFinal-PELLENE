@@ -352,12 +352,6 @@ h2 {
   font-size: 30px;
   margin-bottom: 10px;
 }
-.box-container .zoom-box {
-  transition: transform 0.2s ease-in-out;
-}
-.box-container .zoom-box:hover {
-  transform: scale(1.1);
-}
 
 .subcard {
   font-size: 20px;
@@ -385,6 +379,12 @@ h2 {
   }
   footer .footer-container .footer-icons a i {
     color: white;
+  }
+  .box-container .zoom-box {
+    transition: transform 0.2s ease-in-out;
+  }
+  .box-container .zoom-box:hover {
+    transform: scale(1.1);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
